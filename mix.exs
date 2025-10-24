@@ -75,7 +75,8 @@ defmodule LemonadeStand.MixProject do
       {:gettext, "~> 0.26"},
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.2.0"},
-      {:bandit, "~> 1.5"}
+      {:bandit, "~> 1.5"},
+      {:bonseki, "~> 0.1", path: "../bonseki", override: true}
     ]
   end
 

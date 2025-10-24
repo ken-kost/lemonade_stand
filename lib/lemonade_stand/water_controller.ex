@@ -1,4 +1,4 @@
-defmodule LemonadeStand.LemonController do
+defmodule LemonadeStand.WaterController do
   use Bonseki.Controller, events: [:add, :remove]
 
   def init(_params) do
@@ -14,6 +14,6 @@ defmodule LemonadeStand.LemonController do
   end
 
   def expose(state, _dependencies) do
-    %{count: state.count, has_lemons: state.count > 0}
+    %{count: state.count, has_water: state.count > 0}
   end
 end

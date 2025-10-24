@@ -14,7 +14,8 @@ defmodule LemonadeStand.Application do
       {Phoenix.PubSub, name: LemonadeStand.PubSub},
       # Start a worker by calling: LemonadeStand.Worker.start_link(arg)
       # {LemonadeStand.Worker, arg},
-      # Start to serve requests, typically the last entry
+      # Start to serve requests, typically the last entry,
+      LemonadeStandWeb.App,
       LemonadeStandWeb.Endpoint,
       {AshAuthentication.Supervisor, [otp_app: :lemonade_stand]}
     ]

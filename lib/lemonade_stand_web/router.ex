@@ -36,7 +36,7 @@ defmodule LemonadeStandWeb.Router do
       # If an authenticated user must *not* be present:
       # on_mount {LemonadeStandWeb.LiveUserAuth, :live_no_user}
 
-      live "/lemonades", LemonadeLive
+      live "/lemonades", LemonadeBonsekiLive
     end
   end
 
